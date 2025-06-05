@@ -6,6 +6,22 @@ def calculate(operation):
         expression = ""
     elif operation == 'B':
         expression = expression[:-1]
+    elif operation == 'Bin':
+        try:
+            num = int(eval(expression))
+            expression = bin(num)[2:]
+            label_text.set(expression)
+        except:
+            label_text.set("error")
+            expression = ""
+    elif operation == 'Dec':
+        try:
+            num = int(expression, 2)
+            expression = str(num)
+            label_text.set(expression)
+        except:
+            label_text.set("error")
+            expression = ""
         
     else:
         if expression == "" and operation in ['+','-','*','/']:
