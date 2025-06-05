@@ -23,6 +23,15 @@ def calculate(operation):
         except:
             label_text.set("error")
             expression = ""
+    elif operation == '.':
+        if not expression or expression[-1] in '+-*/.':
+            return
+        last_num = expression.split('+')[-1].split('-')[-1].split('*')[-1].split('/')[-1]
+        if '.' in last_num:
+            return
+        expression += '.'
+        label_text.set(expression)
+        
     else:
         if expression == "" and operation in ['+', '-', '*', '/']:
             return
