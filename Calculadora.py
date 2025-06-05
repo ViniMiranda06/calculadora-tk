@@ -42,6 +42,8 @@ def evaluate():
 
 
 root = tk.Tk()
+root.geometry("513x795")
+root.resizable(False, False)
 root.title("Calculadora Tkinter")
 
 expression = ""
