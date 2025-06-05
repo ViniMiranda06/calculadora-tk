@@ -5,4 +5,4 @@
 
 ## Funções
 -Calculo básico (+, -, * e /)
-OBS: transforma números binários em decimais e vice versa.
+-OBS: transforma números binários em decimais e vice versa.
