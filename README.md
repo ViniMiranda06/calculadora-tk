@@ -4,5 +4,5 @@
 -Python (TkInter)
 
 ## Funções
--Calculo básico (+, -, * e /)
--OBS: transforma números binários em decimais e vice versa.
+- Calculo básico (+, -, * e /)
+- OBS: transforma números binários em decimais e vice versa.
